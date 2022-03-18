@@ -309,7 +309,7 @@ h3 {
 
 .scroll-down{
     position: absolute;
-    bottom: var(--m-2-5);
+    bottom: -1rem;
     left: 0;
     width: 100%;
 }
@@ -414,7 +414,8 @@ h3 {
     text-align: center;
     transform: translateY(0);
     transition: 0.3s;
-    background-color: var(--roxo)
+    background-color: var(--roxo);
+    color: var(--branco);
 }
 
 .services .service-item .service-item-inner:hover {
