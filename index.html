@@ -44,7 +44,11 @@
                     <li class="nav-item">
                         <a href="#contato" class="nav-link">Contato</a>
                     </li>                    
-                </ul>                
+                </ul>
+                <!-- fechar nav -->
+                <div class="nav-close" id="nav-close">
+                    <i class="lni lni-close"></i>
+                </div>
             </div>
             <!-- nav btn -->
             <div class="nav-btns">
@@ -70,7 +74,7 @@
                     <!-- info -->
                     <h1>Somos a LHMA</h1>
                     <span>Serviços <span class="info-text">digitais</span></span>
-                    <!-- social icons -->
+                    <!-- ícones redes sociais -->
                     <ul class="social-icons">
                         <li><a href="#"><i class="lni lni-instagram-original"></i></a></li>
                         <li><a href="#"><i class="lni lni-behance-original"></i></a></li>
@@ -79,8 +83,8 @@
                         <li><a href="#"><i class="lni lni-envelope"></i></a></li>
                     </ul>
                     <!-- button -->
-                    <div>
-                        <a href="#" class="btn btn-default">Contrate nossos serviços</a>
+                    <div >
+                        <a href="#contato" class="btn btn-default">Contrate nossos serviços</a>
                     </div>
                     <!-- scroll down mouse wheel -->
                     <div class="scroll-down">
@@ -167,23 +171,23 @@
                 <div class="row">
                     <!-- itens serviços -->
                     <div class="service-item padd-15">
-                        <div class="service-item-inner" style="background: #9C1DFF; color: white;">
+                        <div class="service-item-inner">
                             <img src="assets/img/Serviço1.png" alt="">
                             <h3>Identidade Visual & Kit de Marca</h3>                            
                         </div>
                     </div>
                     <!-- itens serviços -->
                     <div class="service-item padd-15">
-                        <div class="service-item-inner" style="background: #9C1DFF; color: white;">
+                        <div class="service-item-inner">
                             <img src="assets/img/Serviço2.png" alt="">
                             <h3>Landing Pages, Sites e Aplicativos</h3>                                                        
                         </div>
                     </div>
                     <!-- itens serviços -->
                     <div class="service-item padd-15">
-                        <div class="service-item-inner" style="background: #9C1DFF; color: white;">
+                        <div class="service-item-inner">
                             <img src="assets/img/Serviço3.png" alt="">
-                            <h3>Gestão de mídias sociais, Criação de  posts, stories e reels<h3>                                                       
+                            <h3>Criação de  posts, stories e reels<h3>                                                       
                         </div>
                     </div>
                 </div>
@@ -331,7 +335,7 @@
                                 <span></span>
                             </div>
                         </div>
-                        <a href="#" class="btn btn-default">Enviar mensagem</a>
+                        <a href="#" class="btn btn-default" id="btn-enviar">Enviar mensagem</a>
                     </form>
                 </div>
             </div>
@@ -345,6 +349,56 @@
              </div>
          </footer>    
     </main>
+    <!--==================== Customizar Tema ====================-->
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Customize a vizualização da sua página</h2>
+            <p>Escolha o tamanho da fonte, a cor dos elementos e o tema</p>
+            <!-- tamanho da fonte -->
+            <div class="font-size">
+                <h3>Tamanho da Fonte</h3>
+                <div>
+                    <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2"></span>
+                        <span class="font-size-3 active"></span>
+                        <span class="font-size-4"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+            <!-- cor -->
+            <div class="color">
+                <h3>Cor</h3>
+                <div class="choose-color">
+                    <span class="color-1"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3 active"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+            <!-- background -->
+            <div class="background">
+                <h3>Background</h3>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5 for="bg-1">Light</h5>
+                    </div>
+                    <div class="bg-2">
+                        <span></span>
+                        <h5 for="bg-2">Dim</h5>
+                    </div>
+                    <div class="bg-3">
+                        <span></span>
+                        <h5 for="bg-3">Dark</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <!--==================== SWIPER JS ====================-->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
