@@ -12,12 +12,17 @@ html {
     /*=========== Colors ===========*/
     /* Modo de cor HSL (hue, saturation, lightness) */
     --primary-color-hue: 274;
-    --branco: hsl(252, 30%, 100%);
-    --cinza-claro: hsl(252, 30%, 92%);
+    --dark-color-lightness: 17%;
+    --light-color-lightness: 92%;
+    --white-color-lightness: 100%;
+
+    --branco: hsl(252, 30%, var(--white-color-lightness));
+    --cinza-claro: hsl(252, 30%, var(--light-color-lightness));
     --cinza: hsl(252, 15%, 65%);
     --roxo: hsl(var(--primary-color-hue), 100%, 56%);
     --azul: hsl(189, 100%, 65%);
     --preto: hsl(0, 0, 0);
+    --color-dark: hsl(252, 30%, var(--dark-color-lightness));
 
     /*=========== Fontes e Tipografia ===========*/
     /* .5rem = 8px | rem = 16px... */
@@ -79,7 +84,7 @@ input, textarea
 
 body {
     background-color: var(--cinza-claro);
-    color: var(--preto);
+    color: var(--color-dark);    
     line-height: 1.7;
     font-weight: var(--font-medium);
 }
@@ -167,7 +172,7 @@ h3 {
 
 .btn-default {
     color: var(--branco);
-    background-color: var(--azul);
+    background-color: var(--roxo);
     vertical-align: middle;
     display: inline-block;
     transform: perspective(1px) translateZ(0);
@@ -648,7 +653,7 @@ h3 {
 
 /*=========== Customização do Tema ===========*/
 .customize-theme {
-    background: rgba(0, 0, 0, .4);
+    /*background: rgba(0, 0, 0, .4);*/
     height: 100vh;
     width: 100vw;
     position:fixed;
@@ -775,18 +780,18 @@ h3 {
 }
 
 .customize-theme .choose-bg .bg-1 {
-    background: var(--cinza-claro);
-    color: var(--cinza);
+    background: hsl(252, 30%, 92%);
+    color: var(--preto);
 }
 
 .customize-theme .choose-bg .bg-2 {
     background: hsl(252, 30%, 17%);
-    color: #fff;
+    color: #ffffff;
 }
 
 .customize-theme .choose-bg .bg-3 {
     background: hsl(252, 30%, 10%);
-    color: #fff;
+    color: #ffffff;
 }
 
 .customize-theme .choose-bg > div span {
@@ -933,7 +938,5 @@ h3 {
     .fact-item {
         flex: 0 0 100%;
         max-width: 100%;
-    }
-
-    
+    }    
 }
