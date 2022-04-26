@@ -730,7 +730,7 @@ h3 {
 
 .customize-theme .choose-bg .bg-1 {
     background: hsl(252, 30%, 92%);
-    color: var(--preto);
+    color: black;
 }
 
 .customize-theme .choose-bg .bg-2 {
