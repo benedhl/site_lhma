@@ -246,7 +246,7 @@
                                 <h3 class="contact-subtitle">Chama a gente no zap e faça o orçamento do seu projeto</h3>
                                 <span class="contact-description">
                                     <i class="lni lni-phone contact-icon"></i>
-                                    <a href="#">(64) 99921-9070</a>
+                                    <a href="#">(64) 99660-2234</a>
                                 </span>
                             </div>
                             <!-- informações de contato -->
@@ -268,7 +268,7 @@
                         </div>
                     </div>
                     <!-- formulário de contato -->
-                    <form action="" class="contact-form padd-15">
+                    <form onsubmit="sendEmail(); reset(); return false;" class="contact-form padd-15">
                         <div class="contact-inputs">
                             <!-- condeúdo contato -->
                             <div class="contact-content">
@@ -292,13 +292,29 @@
                         <a href="#" class="btn btn-default" id="btn-enviar">Enviar mensagem</a>
                     </form>
                 </div>
+                <script src="https://smtpjs.com/v3/smtp.js"></script>
+                <script>
+                   function sendEmail(){
+                    Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "lhmadigital@gmail.com",
+                    Password : "8!IgAPiuXI#z",
+                    To : 'atendimento@lhmadigital.com',
+                    From : document.getElementById("email").value,
+                    Subject : "Nova mensagem do site!",
+                    Body : "And this is the body"
+                }).then(
+                message => alert(message)
+                ); 
+                                } 
+                </script>
             </div>
         </section>
          <!--==================== Rodapé ====================-->
          <footer class="footer">
              <div class="container">
                  <div class="footer-text padd-15">
-                     <p>&copy; LHMA Serviços Digitais</p>
+                     <p>&copy; LHMA Serviços Digitais 44.778.786/0001-48</p>
                  </div>
              </div>
          </footer>    
